@@ -1,0 +1,17 @@
+<app-header></app-header>
+
+<div class="container">
+    <app-cokpit
+    (serverCreated)=" onserverAdded($event)"
+    (BlueprintCreated)=" onBluePrintAdded($event)"
+    ></app-cokpit>
+
+    <hr>
+    <div class="row">
+        <div class="col-xs-12">
+            <app-server [element]="elemntServer"  *ngFor="let elemntServer of serverElemnts" ></app-server>
+          
+
+        </div>
+    </div>
+</div>
